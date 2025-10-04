@@ -7,6 +7,8 @@
       el.addEventListener("click", () => {
         el.classList.add("active");
         mobileMenu.style.display = mobileMenuOverlay.style.display = "block";
+
+        mobileMenuOverlay.style.visibility = "visible";
         document.body.classList.add("menu-open");
         el.style.display = "none";
         mobileMenu.offsetHeight;
