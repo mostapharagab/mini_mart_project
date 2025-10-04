@@ -146,6 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
         saveCartQuantity(id, qty);
         renderCart();
       } else if (target.classList.contains('dec')) {
+        if(qty == 1) {
+          removeFromCart(id);
+          renderCart();
+          return;
+        }
         qty = Math.max(1, qty - 1);
         saveCartQuantity(id, qty);
         renderCart();
