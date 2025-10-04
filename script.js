@@ -13,7 +13,6 @@ const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       mobileMenuOverlay.style.visibility = "visible";
       document.body.classList.add("menu-open");
       el.style.display = "none";
-      mobileMenu.offsetHeight;
       mobileMenu.classList.add("active");
     });
   if (id === "mobileMenuClose" || id === "mobileMenuOverlay")
