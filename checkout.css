@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic');
+
+* { box-sizing: border-box; }
+
+.checkout {
+  width: 70%;
+  margin: 20px auto 60px;
+}
+
+.checkout h1 { margin: 10px 0 20px; font-size: 24px; }
+
+.form-section { margin-bottom: 24px; }
+.form-section h2 { font-size: 18px; margin-bottom: 12px; }
+
+.grid-1 { display: grid; grid-template-columns: 1fr; gap: 12px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-weight: 600; }
+.field input { padding: 10px 12px; border: 1px solid #ddd; border-radius: 6px; }
+.field input:focus { outline: none; border-color: #999; }
+
+.error { color: #c0392b; font-size: 12px; min-height: 16px; }
+
+.form-actions { display: flex; justify-content: space-between; margin-top: 16px; }
+.btn { display: inline-block; padding: 12px 16px; border-radius: 6px; text-align: center; }
+.btn.primary { background: #111; color: #fff; border: none; }
+.btn.secondary { background: #f3f3f3; color: #111; }
+
+/* Sections as cards */
+.form-section, .summary {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.summary { margin-bottom: 24px; }
+.summary h2 { font-size: 18px; margin-bottom: 12px; }
+.summary-items { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+.summary-item { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; }
+.summary-item img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; border: 1px solid #eee; margin-right: 8px; }
+.summary-item .title { display: flex; align-items: center; gap: 8px; }
+.summary-totals { display: flex; flex-direction: column; gap: 6px; }
+.summary-totals .row { display: flex; justify-content: space-between; }
+.summary-totals .total { font-weight: 800; font-size: 18px; margin-top: 6px; }
+
+@media (max-width: 992px) {
+  .checkout { width: 90%; }
+}
+
+@media (max-width: 768px) {
+  .summary-item { grid-template-columns: 1fr auto; }
+}
+
+
