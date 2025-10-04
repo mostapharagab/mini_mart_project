@@ -41,28 +41,28 @@ function writeSummary(count, total) {
 }
 
 function loadCartQuantities(ids) {
-  const map = JSON.parse(localStorage.getItem("cart_qty") || "{}");
-  ids.forEach(id => { if (!map[id]) map[id] = 1; });
-  localStorage.setItem("cart_qty", JSON.stringify(map));
-  return map;
+  const qtyMap = JSON.parse(localStorage.getItem("cart_qty") || "{}");
+  ids.forEach(id => { if (!qtyMap[id]) qtyMap[id] = 1; });
+  localStorage.setItem("cart_qty", JSON.stringify(qtyMap));
+  return qtyMap;
 }
 
 function saveCartQuantity(id, qty) {
-  const map = JSON.parse(localStorage.getItem("cart_qty") || "{}");
+  const qtyMap = JSON.parse(localStorage.getItem("cart_qty") || "{}");
   if (qty <= 0) {
-    delete map[id];
+    delete qtyMap[id];
   } else {
-    map[id] = qty;
+    qtyMap[id] = qty;
   }
-  localStorage.setItem("cart_qty", JSON.stringify(map));
+  localStorage.setItem("cart_qty", JSON.stringify(qtyMap));
 }
 
 function removeFromCart(id) {
   const ids = getStoredIds("cart").filter(x => String(x) !== String(id));
   localStorage.setItem("cart", JSON.stringify(ids));
-  const map = JSON.parse(localStorage.getItem("cart_qty") || "{}");
-  delete map[id];
-  localStorage.setItem("cart_qty", JSON.stringify(map));
+  const qtyMap = JSON.parse(localStorage.getItem("cart_qty") || "{}");
+  delete qtyMap[id];
+  localStorage.setItem("cart_qty", JSON.stringify(qtyMap));
 }
 
 async function renderCart() {
