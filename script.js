@@ -11,7 +11,6 @@ const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       mobileMenu.style.display = mobileMenuOverlay.style.display = "block";
       mobileMenuOverlay.classList.add("active");
       mobileMenuOverlay.style.visibility = "visible";
-      document.body.classList.add("menu-open");
       el.style.display = "none";
       mobileMenu.classList.add("active");
     });
@@ -19,7 +18,6 @@ const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
     el.addEventListener("click", () => {
       hamburger.classList.remove("active");
       mobileMenu.classList.remove("active");
-      document.body.classList.remove("menu-open");
       hamburger.style.removeProperty("display");
       setTimeout(() => {
         mobileMenu.style.display = mobileMenuOverlay.style.display = "none";
