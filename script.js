@@ -74,22 +74,20 @@ function renderProducts(list) {
         } EGP</p></div>`
     )
     .join("");
-  document.querySelectorAll(".heart-icon").forEach(
-    (icon) =>
-      (icon.onclick = (e) => {
-        const card = e.target.closest(".card");
-        addToStorage("wishlist", card.dataset.id);
-        icon.classList.add("selected");
-      })
-  );
-  document.querySelectorAll(".cart-icon").forEach(
-    (icon) =>
-      (icon.onclick = (e) => {
-        const card = e.target.closest(".card");
-        addToStorage("cart", card.dataset.id);
-        icon.classList.add("selected");
-      })
-  );
+  document.querySelectorAll(".heart-icon").forEach((icon) => {
+    icon.addEventListener("click", (e) => {
+      const card = e.target.closest(".card");
+      addToStorage("wishlist", card.dataset.id);
+      icon.classList.add("selected");
+    });
+  });
+  document.querySelectorAll(".cart-icon").forEach((icon) => {
+    icon.addEventListener("click", (e) => {
+      const card = e.target.closest(".card");
+      addToStorage("cart", card.dataset.id);
+      icon.classList.add("selected");
+    });
+  });
 }
 function populateCategories(list) {
   const s = document.getElementById("categorySelect");
