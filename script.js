@@ -10,7 +10,7 @@ const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       el.addEventListener("click", () => {
         el.classList.add("active");
         mobileMenu.style.display = mobileMenuOverlay.style.display = "block";
-
+        mobileMenuOverlay.classList.add("active");
         mobileMenuOverlay.style.visibility = "visible";
         document.body.classList.add("menu-open");
         el.style.display = "none";
