@@ -1,4 +1,7 @@
-// Hamburger menu
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+
 ["hamburger", "mobileMenuOverlay", "mobileMenuClose"].forEach(
   (id) => {
     const el = document.getElementById(id);
