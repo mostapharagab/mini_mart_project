@@ -49,7 +49,6 @@
   padding: 0;
 }
 
-/* alignment for columns 2,3,4 */
 .cart-header div:nth-child(2),
 .cart-header div:nth-child(3),
 .cart-header div:nth-child(4),

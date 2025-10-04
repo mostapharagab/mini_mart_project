@@ -63,7 +63,6 @@
     margin-bottom: 8px;
 }
 
-/* card-image position kept in block above */
 
 .card-icons {
     position: absolute;
@@ -124,10 +123,10 @@
     .card-image { aspect-ratio: 3 / 2; }
 }
 
-/* Highlight icons when selected */
+
 .heart-icon.selected {
-  fill: red;   /* heart becomes red */
-  cursor: pointer;
+    fill: red;
+    cursor: pointer;
 }
 
 .cart-icon.selected {

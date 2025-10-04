@@ -81,7 +81,6 @@ nav {
     color: #777;
 }
 
-/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -112,7 +111,6 @@ nav {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Mobile Menu */
 .mobile-menu-overlay {
     position: fixed;
     inset: 0;
