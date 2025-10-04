@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (validate(form)) {
-      alert('Order placed successfully! (demo)');
+      alert('Order placed successfully!');
       localStorage.removeItem('cart');
       localStorage.removeItem('cart_qty');
       window.location.href = 'index.html';
