@@ -1,5 +1,5 @@
 // Hamburger menu
-["hamburger", "mobileMenu", "mobileMenuOverlay", "mobileMenuClose"].forEach(
+["hamburger", "mobileMenuOverlay", "mobileMenuClose"].forEach(
   (id) => {
     const el = document.getElementById(id);
     if (!el) return;
