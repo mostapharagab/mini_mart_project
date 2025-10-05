@@ -25,7 +25,6 @@ const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
     });
 });
 
-// Nav links
 document.querySelectorAll(".shopping-cart").forEach((el) =>
   el.addEventListener("click", (e) => {
     e.preventDefault();
@@ -39,7 +38,6 @@ document.querySelectorAll(".fav").forEach((el) =>
   })
 );
 
-// Product logic
 let allProducts = [];
 function addToStorage(key, id) {
   let items = JSON.parse(localStorage.getItem(key)) || [];
