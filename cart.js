@@ -122,7 +122,6 @@ async function renderCart() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Nav cart click to stay on this page
   const navCart = document.querySelector('.shopping-cart');
   if (navCart) {
     navCart.addEventListener('click', (e) => {
@@ -130,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Attach a single delegated handler for cart interactions
   const container = document.getElementById('cartContainer');
   if (container) {
     container.addEventListener('click', (e) => {
