@@ -14,7 +14,6 @@ A small storefront demo (products listing, favorites, cart, checkout) built with
 - [products.css](products.css) — Styles for the product grid and product cards
 - [navbar.css](navbar.css) — Header / navigation styles
 - [footer.css](footer.css) — Footer styles
-- [style.css](style.css) — Global styles
 - Cart / Favorites / Checkout pages:
   - [cart.html](cart.html)
   - [cart.css](cart.css)
